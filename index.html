@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logotipo/logo-fisica.png" type="image/x-icon">
+    <title>login</title>
+</head>
+
+<body class="body">
+
+    <div class="menu-login">
+        <img src="./logotipo/logo-fisica.png" alt="" width="50" class="logo">
+        <h2 class="titulo">fisica</h2>
+        <input type="text" id="usuario" title="nome" placeholder="   Nome">
+        <button onclick="logar()" class="button">logar</button>
+    
+
+    </div>
+    <audio src="/Nasceu a criança.m4a" id="som"></audio>
+ <img src="https://getwallpapers.com/wallpaper/full/e/c/5/58295.jpg" alt="" class="img-fundo">
+</body>
+<style>
+    .body {
+        background-color: rgb(20, 20, 20);
+        
+        
+
+    }
+
+  
+
+    #usuario {
+        position: relative;
+        left: 0ch;
+        top: -5ch;
+        width: 7cm;
+        height: 5ch;
+        background-color: rgb(171, 174, 177);
+        border: 1cm;
+        border-radius: 2ch;
+        z-index: 4;
+    }
+
+
+    .menu-login {
+        background-color: rgb(24, 22, 22);
+        width: 350px;
+        height: 400px;
+        position: relative;
+        top: 180px;
+        left: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 4;
+
+
+
+
+    }
+
+    .logo {
+        position: absolute;
+        top: 1ch;
+        left: 3cm;
+        z-index: 4;
+    }
+
+    .titulo {
+        position: absolute;
+        font-size: 4ch;
+        color: antiquewhite;
+        top: 0ch;
+        left: 165px;
+        z-index: 4;
+    }
+
+    .button {
+       position: absolute;
+       width: 20ch;
+       height: 4ch;
+       top: 30ch;
+       border: 0cm;
+      background-color: rgb(255, 255, 255);
+     border-radius: 2cm; 
+     z-index: 4;
+
+    }
+    .img-fundo{
+        position: absolute;
+       top: -30ch;
+       left: 2ch;
+     opacity: 0.9;
+        z-index: 1;
+    }
+</style>
+
+<script>
+    
+    function logar(){
+        let audio = document.getElementById("som")
+        audio.play();
+        var nome = document.getElementById('usuario').value
+        console.log(nome);
+
+
+    }
+</script>
+
+</html>
